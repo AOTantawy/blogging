@@ -42,4 +42,5 @@ def loginUser(request):
 
 
 def logoutUser(request):
-    pass
+    logout(request)
+    return HttpResponse('render login page')
